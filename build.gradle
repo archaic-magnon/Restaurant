@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.adl.app.restaurant"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile('com.mikepenz:materialdrawer:5.9.4@aar') {
+        transitive = true
+    }
+
+    /* configurations.all {
+        resolutionStrategy {
+                force  'com.afollestad.material-dialogs:core:0.9.4.5'
+        }
+    }*/
+
+    //Optional: see how to use the utility.
+
+    //Optional: see how to use the utility.
+
+    //Animation
+    //Animation
+
+    //EditText
+    //EditText
+
+    /* //compile 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    //compile 'com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar'
+    //compile 'com.ogaclejapan.smarttablayout:utils-v13:1.6.1@aar'*/    //smarttab
+
+    //validate
+
+    //splash screen
+
+    //crousalNotification
+
+    //cardview core
+
+    //Optional for built-in cards
+
+    //Optional for RecyclerView
+
+    //Optional for staggered grid view support
+
+    //Optional for drag and drop support
+
+    //Optional for twowayview support (coming soon)
+    //compile 'com.github.gabrielemariotti.cards:cardslib-extra-twoway:2.1.0'
+
+    //pin
+
+    //v4
+
+    //otpreadrer
+    
+
+    //material dialog.
+  
+
+    compile 'in.mamga:carousalnotification:1.0'
+    compile 'com.github.gabrielemariotti.cards:cardslib-core:2.1.0'
+    compile 'com.github.gabrielemariotti.cards:cardslib-cards:2.1.0'
+    compile 'com.github.gabrielemariotti.cards:cardslib-recyclerview:2.1.0'
+    compile 'com.github.gabrielemariotti.cards:cardslib-extra-staggeredgrid:2.1.0'
+    compile 'com.github.gabrielemariotti.cards:cardslib-extra-dragdrop:2.1.0'
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:26.+'
+    compile 'com.google.firebase:firebase-messaging:9.2.1'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.mobsandgeeks:android-saripaar:2.0.0'
+    compile 'com.github.ViksaaSkool:AwesomeSplash:v1.0.0'
+    compile 'com.android.support:support-v13:26.+'
+    compile 'com.daimajia.easing:library:2.0@aar'
+    compile 'com.daimajia.androidanimations:library:2.3@aar'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'me.philio:pinentryview:1.0.6'
+    compile 'swarajsaaj:otpreader:1.1'
+    compile 'com.afollestad.material-dialogs:core:0.9.4.5'
+    compile 'com.android.support:support-v4:26.+'
+    testCompile 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'
+

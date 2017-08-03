@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.adl.app.restaurant">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--permission for otp-->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+
+    <application
+        android:name=".OrderDetaiJava"
+        android:allowBackup="true"
+
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".BrowseMenu"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Tab1"
+            android:label="@string/title_activity_tab1"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".WifiCheckService" />
+
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+
+        <service android:name=".MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    <!--service for otp -->
+        <receiver android:name="swarajsaaj.smscodereader.receivers.OtpReader">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".OrderDetail"
+            android:label="@string/title_activity_order_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Lst"
+            android:label="@string/title_activity_lst"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ReviewOrder"
+            android:label="@string/title_activity_review_order"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BrowseMenuTabbedActivity"
+            android:label="@string/title_activity_browse_menu_tabbed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OrderHistoryDetailsActivity"
+            android:label="@string/title_activity_order_history_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Test_tab"
+            android:label="@string/title_activity_test_tab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TabA"
+            android:label="@string/title_activity_tab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".SplashScreen" />
+        <activity
+            android:name=".EditProfile"
+            android:label="@string/title_activity_edit_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MobileNumber"
+            android:label="@string/title_activity_mobile_number"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EnterOTP"
+            android:label="@string/title_activity_enter_otp"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+
+    </application>
+
+</manifest>

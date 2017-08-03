@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Restaurant</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tab1">Tab1</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_order_detail">OrderDetail</string>
+    <string name="title_activity_lst">Lst</string>
+    <string name="title_activity_customization_test">CustomizationTest</string>
+    <string name="title_activity_cart">Cart</string>
+    <string name="title_activity_review_order">ReviewOrder</string>
+    <string name="title_activity_browse_menu_tabbed">BrowseMenuTabbedActivity</string>
+
+
+    <string name="salutation_prompt">Choose</string>
+
+    <string-array name="salutation_arrays">
+        <item>Mr</item>
+        <item>Miss</item>
+        <item>Mrs</item>
+    </string-array>
+    <string name="title_activity_order_history_details">OrderHistoryDetailsActivity</string>
+    <string name="title_activity_test_tab">Test_tab</string>
+    <string name="title_activity_tab">TabA</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_edit_profile">EditProfile</string>
+    <string name="title_activity_mobile_number">MobileNumber</string>
+    <string name="title_activity_enter_otp">EnterOTP</string>
+
+
+</resources>
